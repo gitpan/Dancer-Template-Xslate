@@ -50,7 +50,7 @@
          }
       }
    },
-   "release_status" : "testing",
+   "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
          "web" : "http://rt.cpan.org/Public/Dist/Display.html?Name=Dancer::Template::Xslate"
@@ -62,6 +62,6 @@
          "web" : "https://github.com/franckcuny/dancer-template-xslate"
       }
    },
-   "version" : "0.010_001"
+   "version" : "0.02"
 }
 

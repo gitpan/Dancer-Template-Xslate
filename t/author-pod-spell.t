@@ -25,3 +25,7 @@ all_pod_files_spelling_ok('bin', 'lib');
 __DATA__
 franck
 cuny
+franck
+cuny
+franck
+cuny

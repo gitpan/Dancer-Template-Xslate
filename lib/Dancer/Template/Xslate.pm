@@ -11,7 +11,7 @@ use Text::Xslate;
 
 use base 'Dancer::Template::Abstract';
 
-our $VERSION = '0.010_001'; # VERSION
+our $VERSION = '0.02'; # VERSION
 # ABSTRACT: Text::Xslate wrapper for Dancer
 
 # Note: The standard Xslate template extension is
@@ -57,7 +57,7 @@ sub render {
 1;
 
 
-__END__
+
 =pod
 
 =head1 NAME
@@ -66,7 +66,7 @@ Dancer::Template::Xslate - Text::Xslate wrapper for Dancer
 
 =head1 VERSION
 
-version 0.010_001
+version 0.02
 
 =head1 DESCRIPTION
 
@@ -80,15 +80,16 @@ In order to use this engine, use the template setting:
 This can be done in your config.yml file or directly in your app code with the
 B<set> keyword.
 
-You can configure L<Text::Xslate> :
+You can configure L<Text::Xslate>:
 
     template: xslate
     engines:
       xslate:
-        cache_dir  => "/www/../xslate_cache",
-        cache      => 1,
-        module =>
-          - Text::Xslate::Bridge::TT2 # to keep partial compatibility
+        cache_dir: .xslate_cache/
+        cache:     1
+        extension: tx                     # Dancer's default template extension is "tt"
+        module:
+          - Text::Xslate::Bridge::TT2Like # to keep partial compatibility with Template Toolkit
 
 =head1 SEE ALSO
 
@@ -106,4 +107,7 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
+
+
+__END__
 

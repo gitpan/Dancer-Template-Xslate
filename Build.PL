@@ -25,7 +25,7 @@ my %module_build_args = (
     "franck cuny <franck\@lumberjaph.net>"
   ],
   "dist_name" => "Dancer-Template-Xslate",
-  "dist_version" => "0.010_001",
+  "dist_version" => "0.02",
   "license" => "perl",
   "module_name" => "Dancer::Template::Xslate",
   "recommends" => {},
