@@ -14,8 +14,7 @@ my %module_build_args = (
     "File::Spec" => 0,
     "File::Temp" => 0,
     "Module::Build" => "0.3601",
-    "Test::More" => 0,
-    "perl" => "5.006"
+    "Test::More" => 0
   },
   "configure_requires" => {
     "Module::Build" => "0.3601"
@@ -25,7 +24,7 @@ my %module_build_args = (
     "franck cuny <franck\@lumberjaph.net>"
   ],
   "dist_name" => "Dancer-Template-Xslate",
-  "dist_version" => "0.02",
+  "dist_version" => "0.03",
   "license" => "perl",
   "module_name" => "Dancer::Template::Xslate",
   "recommends" => {},
